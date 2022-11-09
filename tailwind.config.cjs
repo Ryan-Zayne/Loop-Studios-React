@@ -1,12 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
-// const vanillaRTL = require('tailwindcss-vanilla-rtl');
-
 module.exports = {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-
-	// plugins: [vanillaRTL],
-	// corePlugins: { ...vanillaRTL.disabledCorePlugins },
 
 	theme: {
 		extend: {
