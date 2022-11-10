@@ -8,8 +8,8 @@
 		"plugin:react/recommended",
 		"plugin:react/jsx-runtime",
 		"plugin:tailwindcss/recommended",
-		"prettier",
-		"prettier/prettier"
+		"prettier/prettier",
+		"prettier"
 	],
 	"overrides": [],
 	"parserOptions": {
@@ -46,7 +46,6 @@
 			}
 		],
 		"comma-dangle": ["off"],
-
 		//react plugin rules
 		"quote-props": "off",
 		"react/prop-types": "off",
@@ -73,7 +72,6 @@
 				"propElementValues": "always"
 			}
 		],
-
 		"react/button-has-type": "off",
 
 		//Tailwind rules
