@@ -9,13 +9,15 @@ module.exports = {
 			md: '768px',
 			lg: '1024px',
 		},
-		colors: {
-			White: 'hsl(0, 0%, 100%)',
-			Black: 'hsl(0, 0%, 0%)',
-			'Dark-Gray': 'hsl(0, 0%, 55%)',
-			'Very-Dark-Gray': 'hsl(0, 0%, 41%)',
-		},
+
 		extend: {
+			colors: {
+				White: 'hsl(0, 0%, 100%)',
+				Black: 'hsl(0, 0%, 0%)',
+				'Dark-Gray': 'hsl(0, 0%, 55%)',
+				'Very-Dark-Gray': 'hsl(0, 0%, 41%)',
+			},
+
 			backgroundImage: {
 				hero: "url('/src/assets/mobile/image-hero.jpg')",
 				'hero-desktop': "url('/src/assets/desktop/image-hero.jpg')",
