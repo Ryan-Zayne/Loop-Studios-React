@@ -14,11 +14,9 @@ function About() {
 						The leader in interactive VR
 					</h2>
 					<p className='w-[29ch] font-alata text-[1.4rem] text-Dark-Gray md:w-[46ch] md:text-[1.2rem]'>
-						Founded in 2011, Loopstudios
-						\francoismassart\eslint-plugin-tailwindcss\tree\master\docs\rules\classnames-order.mdhas
-						been producing world-class virtual reality projects for some of the best companies around
-						the globe. Our award-winning creations have transformed businesses through digital
-						experiences that bind to their brand.
+						Founded in 2011, Loopstudios been producing world-class virtual reality projects for some of
+						the best companies around the globe. Our award-winning creations have transformed businesses
+						through digital experiences that bind to their brand.
 					</p>
 				</div>
 			</div>
