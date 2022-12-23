@@ -17,7 +17,9 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react", "tailwindcss"],
+
 	"rules": {
+		//Base Eslint Rules
 		"max-len": "off",
 		"indent": "off",
 		"eol-last": "off",
@@ -46,7 +48,8 @@
 			}
 		],
 		"comma-dangle": ["off"],
-		//react plugin rules
+
+		//React plugin rules
 		"quote-props": "off",
 		"react/prop-types": "off",
 		"import/no-extraneous-dependencies": [
@@ -75,6 +78,12 @@
 		"react/button-has-type": "off",
 
 		//Tailwind rules
-		"tailwindcss/no-custom-classname": "off"
+		"tailwindcss/no-custom-classname": "off",
+		"tailwindcss/classnames-order": [
+			"warn",
+			{
+				"config": "tailwind.config.cjs"
+			}
+		]
 	}
 }

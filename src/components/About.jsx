@@ -1,6 +1,7 @@
 import interactive from '../assets/mobile/image-interactive.jpg';
 import interactive2 from '../assets/desktop/image-interactive.jpg';
 
+
 function About() {
 	return (
 		<section className='mobile-flex mt-[7.5rem] md:my-[11rem] '>
