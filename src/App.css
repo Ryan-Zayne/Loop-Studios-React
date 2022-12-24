@@ -100,7 +100,7 @@
 		}
 
 		.hamburger {
-			@apply z-[20] bg-[url(/src/assets/icon-hamburger.svg)] w-[2.4rem] min-h-[1.6rem] active:rotate-180 active:[transition:all_0.4s_ease]
+			@apply z-[20] bg-[url(/src/assets/icon-hamburger.svg)] w-[2.4rem] h-[1.6rem] active:rotate-180 active:[transition:all_0.4s_ease]
 		}
 
 		.hamburger.close {
