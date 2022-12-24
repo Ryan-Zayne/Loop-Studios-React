@@ -8,7 +8,7 @@ function Footer() {
 		<footer className='mobile-flex mt-[7.3rem] gap-[4rem] bg-black py-[3rem] md:flex-row md:justify-between md:px-[8rem]'>
 			<div className='mobile-flex md: gap-[2rem] md:items-start md:gap-[1.5rem]'>
 				<h4 className='font-josefin text-[2.5rem] font-[500] text-white'>loopstudios</h4>
-				<ul className='mobile-flex font-josefin gap-[1.5rem] text-[1.3rem] text-white/[0.85] md:flex-row'>
+				<ul className='mobile-flex gap-[1.5rem] font-josefin text-[1.3rem] text-white/[0.85] md:flex-row'>
 					<li>About</li>
 					<li>Event</li>
 					<li>Career</li>
@@ -24,7 +24,7 @@ function Footer() {
 					<img className='scale-[0.73]' src={pinterest} alt='icon' />
 					<img className='scale-[0.73]' src={instagram} alt='icon' />
 				</picture>
-				<p className='font-alata text-Very-Dark-Gray text-[1.3rem]'>
+				<p className='font-alata text-[1.3rem] text-Very-Dark-Gray'>
 					© 2021 Loopstudios. All rights reserved.
 				</p>
 			</div>

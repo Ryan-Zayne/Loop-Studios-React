@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
 	/* -----------------
 	/* General CSS Reset */
@@ -55,6 +56,8 @@
 	}
 }
 
+
+
 @layer components {
 	.bg-hero {
 		@apply bg-cover bg-no-repeat;
@@ -65,15 +68,51 @@
 	}
 
 	.btn {
-		@apply font-alata border-Very-Dark-Gray border-2 border-solid p-[0.7rem_3rem] text-[1.2rem] uppercase tracking-[0.35rem];
+		@apply border-2 border-solid border-Very-Dark-Gray p-[0.7rem_3rem] font-alata text-[1.2rem] uppercase tracking-[0.35rem];
 	}
 
 	.mobile-flex {
 		@apply flex flex-col items-center;
 	}
+
+	/* ******** */
+	/* To be applied just before Tablet view */
+	/* ******** */
+	@media (width < 768px) {
+		.nav-list {
+			@apply flex flex-col gap-[3.2rem] h-[100vh] w-[0] pt-[12rem] fixed [inset:0_0_0_auto] z-[10] [transition:width_150ms_ease] [backdrop-filter:blur(3rem)] bg-[hsl(0,0%,0%,0.92)]
+		}
+
+		.nav-list.toggle {
+			@apply w-[22rem] [transition:width_500ms_ease]
+		}
+
+		.nav-list > a {
+			@apply pl-[4rem] tracking-[1px]
+		}
+
+		li:is(.underline-indicators){
+			@apply relative
+		}
+
+		.overlay {
+			@apply fixed h-[100vh] w-[100vh] bg-[hsl(0,0%,0%,0.55)]
+		}
+
+		.hamburger {
+			@apply z-[20] bg-[url(/src/assets/icon-hamburger.svg)] w-[2.4rem] h-[1.6rem] active:rotate-180 active:[transition:all_0.4s_ease]
+		}
+
+		.hamburger.close {
+			@apply w-[2rem] aspect-square bg-[url(/src/assets/icon-close.svg)]
+		}
+	}
 }
 
-@media (min-width: 768px) {
+/* ********** */
+/* GRID SYSTEM */
+/* ********* */
+@media (width > 768px) {
 	section:is(.grid-in-stylesheet) {
 		display: grid;
 		grid-auto-columns: minmax(16rem, 23rem);
