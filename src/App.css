@@ -104,7 +104,7 @@
 		}
 
 		.hamburger.close {
-			@apply w-[2rem] aspect-square bg-[url(/src/assets/icon-close.svg)]
+			@apply w-[2rem] h-[2rem] bg-[url(/src/assets/icon-close.svg)]
 		}
 	}
 }
