@@ -118,12 +118,12 @@
 		grid-auto-columns: minmax(16rem, 23rem);
 		gap: 2.3rem;
 		justify-content: center;
+		padding-inline: 3rem;
 		grid-template-areas:
 			'title title . button'
 			'..... ..... . ......'
 			'one two three four'
 			'five six seven eight';
-		padding-inline: 3rem;
 	}
 
 	.grid-in-stylesheet > h3 {
