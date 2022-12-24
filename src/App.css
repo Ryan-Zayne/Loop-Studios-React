@@ -80,7 +80,7 @@
 	/* ******** */
 	@media (width < 768px) {
 		.nav-list {
-			@apply flex flex-col gap-[3.2rem] h-[100vh] w-[0] pt-[12rem] fixed [inset:0_0_0_auto] z-[10] [transition:width_150ms_ease] [backdrop-filter:blur(3rem)] bg-[hsl(0,0%,0%,0.92)]
+			@apply flex flex-col gap-[3.2rem] h-[100vh] w-[0] pt-[12rem] fixed [inset:0_0_0_auto] z-[10] [transition:width_150ms_ease] [backdrop-filter:blur(3rem)] bg-[hsl(0,0%,0%,0.85)]
 		}
 
 		.nav-list.toggle {
