@@ -31,7 +31,7 @@ function Gallery() {
 	];
 
 	const imageArray = images.map(([id, mobilePic, desktopPic, title]) => (
-		<picture className='relative max-md:w-[32.4rem]' key={id}>
+		<picture className='relative max-md:w-[min(auto,32.4rem)]' key={id}>
 			<source media='(min-width: 768px)' srcSet={desktopPic} />
 			<img className='brightness-[0.6]' src={mobilePic} alt='' />
 			<p className='absolute bottom-[1rem] left-[1.9rem] w-[9ch] font-josefin text-[1.8rem] font-[300] uppercase text-white opacity-[0.75]'>

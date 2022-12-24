@@ -31,7 +31,7 @@ function Navbar() {
 					<Link location={'Product'} />
 				</ul>
 
-				<button className={`hamburger ${isClose ? 'close' : ''} md:hidden`} onClick={hamburgerToggler}>
+				<button className={`hamburger  ${isClose ? 'close' : ''} md:hidden`} onClick={hamburgerToggler}>
 					{/* CSS Background image here */}
 				</button>
 			</nav>

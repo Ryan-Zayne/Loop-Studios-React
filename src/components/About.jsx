@@ -6,7 +6,7 @@ function About() {
 	return (
 		<section className='mobile-flex mt-[7.5rem] md:my-[11rem] '>
 			<div className='mobile-flex md:w-[100%] md:flex-row md:justify-center'>
-				<picture className='w-[32.4rem] md:w-[50rem]'>
+				<picture className='w-[min(auto,32.4rem)] md:w-[50rem]'>
 					<source srcSet={interactive} media='(min-width: 768)' />
 					<img src={interactive2} alt='' />
 				</picture>

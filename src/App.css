@@ -96,7 +96,7 @@
 		}
 
 		.overlay {
-			@apply fixed min-h-[100vh] w-[100vh] bg-[hsl(0,0%,0%,0.55)]
+			@apply fixed min-h-[100vh] w-[100vw] bg-[hsl(0,0%,0%,0.55)]
 		}
 
 		.hamburger {
