@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
 	/* -----------------
 	/* General CSS Reset */
@@ -56,8 +55,6 @@
 	}
 }
 
-
-
 @layer components {
 	.bg-hero {
 		@apply bg-cover bg-no-repeat;
@@ -80,31 +77,45 @@
 	/* ******** */
 	@media (width < 768px) {
 		.nav-list {
-			@apply flex flex-col gap-[3.2rem] h-[100vh] w-[0] pt-[12rem] fixed [inset:0_0_0_auto] z-[10] [transition:width_150ms_ease] [backdrop-filter:blur(3rem)] bg-[hsl(0,0%,0%,0.85)]
+			@apply bg-[hsl(0, 0%, 0%, 0.85)] [inset: 0_0_0_auto] fixed z-[10] flex h-[100vh] w-[0] flex-col gap-[3.2rem] pt-[12rem] [transition:width_150ms_ease] [backdrop-filter:blur(3rem)];
 		}
 
 		.nav-list.toggle {
-			@apply w-[22rem] [transition:width_500ms_ease]
+			@apply [transition: width_500ms_ease] w-[22rem];
 		}
 
 		.nav-list > a {
-			@apply pl-[4rem] tracking-[1px]
+			@apply pl-[4rem] tracking-[1px];
 		}
 
-		li:is(.underline-indicators){
+		li:is(.underline-indicators) {
 			@apply relative
 		}
 
+		.underline-indicators:hover::after,
+		.underline-indicators:active::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			bottom: 0;
+			background-color: hsl(var(--clr-white), 0.7);
+		}
+
+		.underline-indicators:active::after {
+			background-color: hsl(var(--clr-white));
+		}
+
 		.overlay {
-			@apply fixed min-h-[100vh] w-[100vw] bg-[hsl(0,0%,0%,0.55)]
+			@apply bg-[hsl(0, 0%, 0%, 0.55)] fixed min-h-[100vh] w-[100vw];
 		}
 
 		.hamburger {
-			@apply z-[20] bg-[url(/src/assets/icon-hamburger.svg)] w-[2.4rem] h-[1.6rem] active:rotate-180 active:[transition:all_0.4s_ease]
+			@apply active: z-[20] h-[1.6rem] w-[2.4rem] rotate-180 bg-[url(/src/assets/icon-hamburger.svg)] active:[transition:all_0.4s_ease];
 		}
 
 		.hamburger.close {
-			@apply w-[2rem] h-[2rem] bg-[url(/src/assets/icon-close.svg)]
+			@apply h-[2rem] w-[2rem] bg-[url(/src/assets/icon-close.svg)];
 		}
 	}
 }
