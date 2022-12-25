@@ -72,46 +72,46 @@
 		@apply flex flex-col items-center;
 	}
 
+	li:is(.underline-indicators) {
+		@apply relative;
+	}
+	.underline-indicators:hover::after,
+	.underline-indicators:active::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: -3px;
+		background-color: hsl(0, 0%, 100%, 0.7);
+	}
+
+	.underline-indicators:active::after {
+		background-color: hsl(0, 0%, 100%);
+	}
+
+
 	/* ******** */
 	/* To be applied just before Tablet view */
 	/* ******** */
 	@media (width < 768px) {
 		.nav-list {
-			@apply bg-[hsl(0, 0%, 0%, 0.85)] [inset: 0_0_0_auto] fixed z-[10] flex h-[100vh] w-[0] flex-col gap-[3.2rem] pt-[12rem] [transition:width_150ms_ease] [backdrop-filter:blur(3rem)];
+			@apply fixed z-[10] flex h-[100vh] w-[0] flex-col gap-[3.2rem] bg-[hsl(0,0%,0%,0.85)] pt-[12rem] [inset:0_0_0_auto] [transition:width_150ms_ease] [backdrop-filter:blur(3rem)];
 		}
 
 		.nav-list.toggle {
-			@apply [transition: width_500ms_ease] w-[22rem];
+			@apply w-[22rem] [transition:width_500ms_ease];
 		}
 
 		.nav-list > a {
 			@apply pl-[4rem] tracking-[1px];
 		}
 
-		li:is(.underline-indicators) {
-			@apply relative
-		}
-
-		.underline-indicators:hover::after,
-		.underline-indicators:active::after {
-			content: '';
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			bottom: 0;
-			background-color: hsl(var(--clr-white), 0.7);
-		}
-
-		.underline-indicators:active::after {
-			background-color: hsl(var(--clr-white));
-		}
-
 		.overlay {
-			@apply bg-[hsl(0, 0%, 0%, 0.55)] fixed min-h-[100vh] w-[100vw];
+			@apply fixed min-h-[100vh] w-[100vw] bg-[hsl(0,0%,0%,0.55)];
 		}
 
 		.hamburger {
-			@apply active: z-[20] h-[1.6rem] w-[2.4rem] rotate-180 bg-[url(/src/assets/icon-hamburger.svg)] active:[transition:all_0.4s_ease];
+			@apply z-[20] h-[1.6rem] w-[2.4rem] bg-[url(/src/assets/icon-hamburger.svg)] active:rotate-180 active:[transition:all_0.4s_ease];
 		}
 
 		.hamburger.close {
@@ -119,6 +119,7 @@
 		}
 	}
 }
+
 
 /* ********** */
 /* GRID SYSTEM */
