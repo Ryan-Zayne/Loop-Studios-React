@@ -30,6 +30,7 @@ function Gallery() {
 		[8, fisheye, fisheye2, 'Make It Fisheye'],
 	];
 
+
 	const imageArray = images.map(([id, mobilePic, desktopPic, title]) => (
 		<picture className='relative max-md:w-[min(auto,32.4rem)]' key={id}>
 			<source media='(min-width: 768px)' srcSet={desktopPic} />

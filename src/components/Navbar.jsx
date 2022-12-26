@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Link from './Link';
-import About from './About';
 
 function Navbar() {
 	const [isClose, setIsClose] = useState(false);
@@ -13,7 +12,7 @@ function Navbar() {
 		<>
 			{isClose && (
 				<div onClick={hamburgerToggler} className='overlay'>
-					{/* Overlay here*/}
+					{/* Overlay here */}
 				</div>
 			)}
 
