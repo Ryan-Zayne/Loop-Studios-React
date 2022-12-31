@@ -14,7 +14,7 @@ import {
 	fromAbove2,
 	pocket2,
 	curiosity2,
-	fisheye2
+	fisheye2,
 } from '../lib';
 
 
@@ -29,7 +29,6 @@ function Gallery() {
 		[7, curiosity, curiosity2, 'The Curiosity'],
 		[8, fisheye, fisheye2, 'Make It Fisheye'],
 	];
-
 
 	const imageArray = images.map(([id, mobilePic, desktopPic, title]) => (
 		<picture className='relative max-md:w-[min(auto,32.4rem)]' key={id}>
