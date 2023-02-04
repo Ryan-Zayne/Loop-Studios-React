@@ -9,8 +9,7 @@
 		"plugin:react/recommended",
 		"plugin:react/jsx-runtime",
 		"plugin:tailwindcss/recommended",
-		"prettier/prettier",
-		"prettier"
+		"plugin:prettier/recommended"
 	],
 	"overrides": [],
 	"parserOptions": {
@@ -18,7 +17,6 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react", "tailwindcss"],
-
 	"rules": {
 		//Base Eslint Rules
 		"max-len": "off",
@@ -36,19 +34,14 @@
 				"max": 3
 			}
 		],
-		"no-tabs": [
-			"warn",
-			{
-				"allowIndentationTabs": true
-			}
-		],
+		"no-tabs": "off",
 		"object-curly-newline": [
 			"error",
 			{
 				"multiline": true
 			}
 		],
-		"comma-dangle": ["off"],
+		"comma-dangle": "off",
 
 		//React plugin rules
 		"quote-props": "off",
@@ -84,6 +77,14 @@
 			"warn",
 			{
 				"config": "tailwind.config.cjs"
+			}
+		],
+
+		//Prettier rules
+		"prettier/prettier": [
+			"error",
+			{
+				"endOfLine": "auto"
 			}
 		]
 	}
