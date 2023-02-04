@@ -11,13 +11,13 @@ function Navbar() {
 	return (
 		<>
 			{isClose && (
-				<div onClick={hamburgerToggler} className='overlay'>
+				<div onClick={hamburgerToggler} className="overlay">
 					{/* Overlay here */}
 				</div>
 			)}
 
-			<nav className='flex w-[100%] items-center justify-between pt-[1.7rem] [padding-inline:2.5rem]'>
-				<h1 className='text-[2.5rem]'>loopstudios</h1>
+			<nav className="flex w-[100%] items-center justify-between pt-[1.7rem] [padding-inline:2.5rem]">
+				<h1 className="text-[2.5rem]">loopstudios</h1>
 
 				<ul
 					className={`nav-list text-[1.5rem] md:flex md:gap-[3.5rem] md:text-[1.3rem]

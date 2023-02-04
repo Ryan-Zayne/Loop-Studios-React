@@ -13,7 +13,6 @@
 		box-sizing: border-box;
 	}
 
-
 	/* -------------------------- */
 	/* Making basic style resets */
 	/* ------------------------- */
@@ -55,8 +54,6 @@
 	}
 }
 
-
-
 @layer components {
 	.bg-hero {
 		@apply bg-cover bg-no-repeat;
@@ -91,10 +88,9 @@
 		background-color: hsl(0, 0%, 100%);
 	}
 
-
-/* ******** */
-/* To be applied just before Tablet View */
-/* ******** */
+	/* ******** */
+	/* To be applied just before Tablet View */
+	/* ******** */
 	@media (width < 768px) {
 		.nav-list {
 			@apply fixed z-[10] flex h-[100vh] w-[0] flex-col gap-[3.2rem] bg-[hsl(0,0%,0%,0.85)] pt-[12rem] [inset:0_0_0_auto] [transition:width_150ms_ease] [backdrop-filter:blur(3rem)];
@@ -121,8 +117,6 @@
 		}
 	}
 }
-
-
 
 /* ********** */
 /* GRID SYSTEM */
