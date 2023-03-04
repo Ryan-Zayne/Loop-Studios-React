@@ -78,14 +78,6 @@
 			{
 				"config": "tailwind.config.cjs"
 			}
-		],
-
-		//Prettier rules
-		"prettier/prettier": [
-			"error",
-			{
-				"endOfLine": "auto"
-			}
 		]
 	}
 }
