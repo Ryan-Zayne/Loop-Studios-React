@@ -9,7 +9,7 @@ function Footer() {
 			<div className="mobile-flex md: gap-[2rem] md:items-start md:gap-[1.5rem]">
 				<h4 className="font-josefin text-[2.5rem] font-[500] text-white">loopstudios</h4>
 				<ul className="mobile-flex gap-[1.5rem] font-josefin text-[1.3rem] text-white/[0.85] md:flex-row">
-					<li>About</li>
+					<li>Sike again</li>
 					<li>Event</li>
 					<li>Career</li>
 					<li>Products</li>
